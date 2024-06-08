@@ -91,20 +91,20 @@ nav ul li a:hover {
     .spaceship {
         width: 250px;
         height: 250px;
-        top: 20%;
+        top: 25%;
         right: 50px;
     }
 }
 
 @keyframes upDown {
     0% {
-        transform: translateY(-2cm);
+        transform: translateY(-1cm);
     }
     50% {
-        transform: translateY(2cm);
+        transform: translateY(1cm);
     }
     100% {
-        transform: translateY(-2cm);
+        transform: translateY(-1cm);
     }
 }
 

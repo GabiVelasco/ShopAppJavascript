@@ -36,13 +36,13 @@ document.getElementById('products-link').addEventListener('click', function(even
         { id: 5, name: 'Product 5', description: 'Description of Product 5', price: 50 }
     ];
     displayProducts(products);
-    productList.innerHTML = ''; // Clear existing content
+    productList.innerHTML = '<h2>Welcome to our Futuristic Shop!</h2><p>Explore our amazing products...</p>'; // Clear existing content
 });
 
-// Display products when the page loads
+// Display Welcome when the page loads
 window.onload = function() {
     const productList = document.getElementById('product-list');
-    productList.innerHTML = '';
+    productList.innerHTML = '<h2>Welcome to our Futuristic Shop!</h2><p>Explore our amazing products...</p>';
 };
 
 

@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    background: linear-gradient(45deg, #ff6600, #6600ff, #00ccff, #ff0066);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    min-height: 80vh;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Modern CSS Effects */
+
+header h1 {
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Up and Down Spaceship Animation */
+
+.spaceship {
+    background-image: url('spaceship.png');
+    width: 550px;
+    height: 550px;
+    position: fixed;
+    top: 30%;
+    right: 150px;
+    background-repeat: no-repeat;
+    animation: upDown 10s linear infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(-2cm);
+    }
+    50% {
+        transform: translateY(2cm);
+    }
+    100% {
+        transform: translateY(-2cm);
+    }
+}
+
+/* Product Card Styling */
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.product-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.product-card p {
+    margin: 0 0 10px 0;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background-color: #ff6600;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #ff4500;
+}

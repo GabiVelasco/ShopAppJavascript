@@ -30,6 +30,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a {
@@ -60,9 +61,9 @@ header h1:hover {
     transform: scale(1.1);
 }
 
-nav ul li a {
+/* nav ul li a {
     transition: color 0.3s ease-in-out;
-}
+} */
 
 nav ul li a:hover {
     color: #ff6600;
@@ -137,3 +138,4 @@ nav ul li a:hover {
 .product-card button:hover {
     background-color: #ff4500;
 }
+

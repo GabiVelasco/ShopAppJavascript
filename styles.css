@@ -139,3 +139,24 @@ nav ul li a:hover {
     background-color: #ff4500;
 }
 
+/* Spaceship styles for desktop */
+/* .spaceship {
+    background-image: url('spaceship.png');
+    width: 550px;
+    height: 550px;
+    position: fixed;
+    top: 30%;
+    right: 150px;
+    background-repeat: no-repeat;
+    animation: upDown 10s linear infinite;
+} */
+
+/* Media query for handheld devices */
+@media (max-width: 768px) {
+    .spaceship {
+        width: 250px;
+        height: 250px;
+        top: 20%;
+        right: 50px;
+    }
+}
